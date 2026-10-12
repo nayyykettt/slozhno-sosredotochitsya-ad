@@ -4,4 +4,10 @@
 */
 :root{
     --bg-image: url("../images/cover-image-dark.png");
+    --accent-color: #FF0070 ;
+    --bg-color:#000028;
+    --text-color:#F1B2CE;
+    --decor-text-color:#000028;
+    --title-color:#DB00FF;
+    --secondary-color:#FF0070; /* меню, уголки, заголовки секций */
 }

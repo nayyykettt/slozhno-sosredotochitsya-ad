@@ -10,6 +10,12 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-image: url("../images/cover-image-light.png");
+  --accent-color: #F093C8;
+  --bg-color: #FCEFF6;
+  --text-color: #676362;
+  --decor-text-color: #353430;
+  --title-color: #F6C4E4;
+  --secondary-color: #353430;
 }
 
 .theme-light .page {
@@ -19,5 +25,11 @@
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url("../images/cover-image-light.png");
+    --accent-color: #F093C8;
+    --bg-color: #FCEFF6;
+    --text-color: #676362;
+    --decor-text-color: #353430;
+    --title-color: #F6C4E4;
+    --secondary-color: #353430;
   }
 }
