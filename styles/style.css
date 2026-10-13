@@ -35,13 +35,12 @@
   font-family: IBM Plex Mono, monospace;
   margin: 0;
   font-size: 18px;
-  padding: 0 4px;
   font-weight:700;
 }
 
 .header {
   background-image: var(--bg-image);
-  background-position: center;
+  background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "IBM Plex Mono", monospace;
@@ -49,8 +48,8 @@
   position: relative;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr auto 1fr;
-  padding: 16px;
+  grid-template-rows: 1fr auto 1fr;
+  padding: 16px 16px 16px 0;
 }
 
 .header__title,
@@ -62,11 +61,30 @@
   letter-spacing: 0;
   margin: 0;
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-.header__title {
-  align-self: end;
+.header__subtitle {
+  align-self: start;
+  margin-top: 55px;
+}
+
+@media (min-width: 768px) {
+  .header__subtitle {
+    margin-top: 162px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__subtitle {
+    margin-top: 114px;
+  }
+
+  .header__title,
+  .footer__title {
+    font-size: 157px;
+    text-shadow: 4px 4px 0 var(--accent-color);
+  }
 }
 
 .footer {
@@ -85,6 +103,18 @@
   gap: 16px;
   list-style: none;
  }
+
+@media (max-width: 1023px) {
+  .header__theme-menu {
+    justify-self: end;
+    margin-top: 40px;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
 
 .header__theme-menu-button {
   background: none;
@@ -153,7 +183,7 @@
 .content {
   display: grid;
   gap: 80px;
-  padding: 80px 16px 60px;
+  padding: 80px 20px 60px;
 }
 
 .section {
@@ -235,7 +265,18 @@
    grid-area: books; 
 }
 .gallery__image_street {
-   grid-area: street; 
+   grid-area: street;
+}
+
+@media (max-width: 767px) {
+  .gallery__grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery__image {
+    height: auto;
+  }
 }
 
 .link {

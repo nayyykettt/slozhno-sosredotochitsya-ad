@@ -22,6 +22,10 @@
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
 
+.theme-light .header__rec {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url("../images/cover-image-light.png");
@@ -31,5 +35,9 @@
     --decor-text-color: #353430;
     --title-color: #F6C4E4;
     --secondary-color: #353430;
+  }
+
+  :root:not(.theme-dark) .header__rec {
+    display: none;
   }
 }
