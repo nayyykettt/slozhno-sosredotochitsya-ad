@@ -36,6 +36,7 @@
   margin: 0;
   font-size: 18px;
   font-weight:700;
+  margin-top: 16px;
 }
 
 .header {
@@ -219,7 +220,7 @@
 }
 
 .section__text + .section__subtitle {
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 .page {
